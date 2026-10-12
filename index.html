@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#193d3a">
+  <meta name="description" content="Farmakognozi finaline adım adım hazırlan: ders notları, WhatsApp sınav biçimlerinde sorular ve kendi molekül çizimlerin.">
+  <title>Farmakognozi Sınav Atölyesi</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="data.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Ana sayfa"><span class="brand-mark">F</span><span><strong>Farmakognozi</strong><small>Sınav Atölyesi · TR / EN</small></span></a>
+    <nav class="main-nav" aria-label="Ana menü">
+      <button data-view="home" class="nav-btn active">Başla</button>
+      <button data-view="learn" class="nav-btn">Adım adım öğren</button>
+      <button data-view="exam" class="nav-btn">Sınav turu</button>
+      <button data-view="draw" class="nav-btn">Molekül çiz</button>
+      <button data-view="progress" class="nav-btn">İlerlemem</button>
+    </nav>
+    <button id="langToggle" class="quiet-btn" title="English / Türkçe">TR / EN</button>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer><span>Kaynaklar oyuna gömülmez; ilerleme bu tarayıcıda kalır.</span><span>Farmakognozi Sınav Atölyesi</span></footer>
+</body>
+</html>
