@@ -148,7 +148,7 @@ const STRUCTURE_REFERENCES = {
   codeine:[5284371,'C₁₈H₂₁NO₃'],colchicine:[6167,'C₂₂H₂₅NO₆'],lysergic:[6717,'C₁₆H₁₆N₂O₂'],quinine:[3034034,'C₂₀H₂₄N₂O₂'],
   tropine:[449293,'C₈H₁₅NO'],thebaine:[5324289,'C₁₉H₂₁NO₃'],pelletierine:[3034881,'C₈H₁₅NO'],yohimbine:[8969,'C₂₁H₂₆N₂O₃']
 };
-window.STUDY.structures.forEach(s=>{const ref=STRUCTURE_REFERENCES[s.id];if(ref){s.pubchemCid=ref[0];s.formula=ref[1];s.image=`assets/structures/${s.id}.png`;s.source=`PubChem CID ${s.pubchemCid}; ${s.source}`;}});
+window.STUDY.structures.forEach(s=>{const ref=STRUCTURE_REFERENCES[s.id];if(ref){s.pubchemCid=ref[0];s.formula=ref[1];s.image=`assets/structures/display/${s.id}.png`;s.source=`PubChem CID ${s.pubchemCid}; ${s.source}`;}});
 
 // The reasoning cues restate the distinctions already present in the lesson text.
 const LEARNING_FOCUS = {
