@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#193d3a">
+  <meta name="description" content="Farmakognozi drog tablosunu karıştırılmış ve boşluk doldurmalı turlarla çalış; molekül yapılarını hafızandan çiz.">
+  <title>Farmakognozi · Tablo ve Yapı Oyunu</title>
+  <link rel="stylesheet" href="style.css?v=20261016-table1">
+  <link rel="stylesheet" href="table-game.css?v=20261016-table1">
+  <script defer src="data.js?v=20261013-2"></script>
+  <script defer src="table-game-data.js?v=20261016-table1"></script>
+  <script defer src="table-game.js?v=20261016-table1"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Farmakognozi ana sayfa">
+      <span class="brand-mark">F</span>
+      <span><strong>Farmakognozi</strong><small>Tablo ve yapı oyunu · TR / EN</small></span>
+    </a>
+    <nav class="main-nav table-nav" aria-label="Oyun bölümleri">
+      <button class="nav-btn active" data-tab="table">Tabloyu doldur</button>
+      <button class="nav-btn" data-tab="draw">Molekül çiz</button>
+      <a class="nav-btn table-back" href="index.html">Ana oyuna dön</a>
+    </nav>
+    <button id="languageToggle" class="quiet-btn" type="button">English</button>
+  </header>
+  <main id="tableGame" tabindex="-1" aria-live="polite"></main>
+  <footer><span>İlerleme ve çizimler bu tarayıcıda saklanır.</span><span>Yapı çizimleri otomatik puanlanmaz; referansla karşılaştırılır.</span></footer>
+  <noscript>Bu oyun için tarayıcıda JavaScript etkin olmalıdır.</noscript>
+</body>
+</html>
